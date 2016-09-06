@@ -36,11 +36,9 @@ The above JSON protocol shows the parameters available to search for news in Kne
 
 *Onde:*
 
-`key`: chave de autorização do cliente.
-
-`query`: palavras que representam uma consulta (operadores AND, OR e NOT - default OR).
-
-`defaultOperator`: possibilita definir o operador padrão a ser usado em uma consulta, com valores possíveis OR ou AND (default OR).
+	`key`: chave de autorização do cliente.
+	`query`: palavras que representam uma consulta (operadores AND, OR e NOT - default OR).
+	`defaultOperator`: possibilita definir o operador padrão a ser usado em uma consulta, com valores possíveis OR ou AND (default OR).
 
 offset: posição inicial da lista de notícias recuperadas - descarta as notícias anteriores; a primeira notícia está na posição 0 (zero).
 
