@@ -38,7 +38,7 @@ The above JSON protocol shows the parameters available to search for news in Kne
 Field | Description
 ----- | -----------
 `key` | the key authorization
-`query` | the boolean query (operators AND, OR e NOT - default OR)
+`query` | the boolean query (operators AND, OR, NOT)
 `defaultOperator` | the default boolean operator (OR or AND) - default OR
 `offset` | the start position
 
@@ -60,7 +60,7 @@ Sort field | Description
 `order` | the oorder bo be sorted (asc or desc)
 
 
-*__IMPORTANT__: Date format based on W3C pattern (eg.,  1997-07-16T19:20:30)*
+*__IMPORTANT__: Date format based on W3C pattern (eg., 1997-07-16T19:20:30)*
 
 
 ## Response protocol
