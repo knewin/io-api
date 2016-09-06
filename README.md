@@ -41,6 +41,7 @@ Field | Required | Description
 `query` | yes | a boolean query (max 1024 characters)
 `defaultOperator` | no | the default boolean operator (OR or AND) - default OR
 `offset` | no | a start position - default 0 (zero)
+`gmt` | no |  the GMT to be used - default UTC
 `filter` | no | to filter the result set
 `sort` | no | to sort the result set - default crawled date, descendent order - from newer to older
 
@@ -53,13 +54,12 @@ Filter field | Description
 `sinceCrawled` | a since crawled date
 `untilCrawled` | a until crawled date
 `fields` | a list of field to be returned
-`gmt` | the GMT to be used
 
 
 Sort field | Required | Description
 ---------- | -------- | -----------
-`field` | yes | the field to be used to sort the result set (`published_date`, `crawled_date`, `frequency`)
-`order` | yes | the order bo be sorted (asc or desc)
+`field` | yes | the field to be used to sort the result set (possible values: `published_date`, `crawled_date`, `frequency`)
+`order` | yes | the order bo be sorted (possible values: `asc` or `desc`)
 
 
 *__IMPORTANT__: Date format based on W3C pattern (eg., 1997-07-16T19:20:30)*
