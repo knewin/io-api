@@ -35,12 +35,12 @@ The above JSON protocol shows the parameters available to search for news in Kne
 
 *where:*
 
-Field | Optional | Description
+Field | Required | Description
 ----- | -------- | -----------
-`key` | no | the key authorization
+`key` | yes | the key authorization
 `query` | yes | a boolean query (max 1024 characters)
-`defaultOperator` | yes | the default boolean operator (OR or AND) - default OR
-`offset` | yes | a start position
+`defaultOperator` | no | the default boolean operator (OR or AND) - default OR
+`offset` | no | a start position (default 0)
 
 Filter field | Description
 ------------ | -----------
