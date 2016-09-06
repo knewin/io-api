@@ -43,7 +43,7 @@ Field | Description
 `offset` | posição inicial da lista de notícias recuperadas - descarta as notícias anteriores; a primeira notícia está na posição 0 (zero)
 
 Filter field | Description
------ | -----------
+------------ | -----------
 `sourceId` | lista de identificadores de fontes - máximo de 100 identificadores
 `language` | lista de linguagens para restringir a consulta
 `category` | filtrar por uma categoria da notícia
@@ -58,7 +58,7 @@ Filter field | Description
 
 
 Sort field | Description
------ | -----------
+---------- | -----------
 `field` | indica o campo a ser utilizado para ordenar as notícias recuperadas ("published_date", "crawled_date", "frequency")
 `order` | informa se a ordenação deverá ser ascendente (asc), do mais antigo para o mais novo, ou descendente (desc), do mais novo para o mais antigo
 
