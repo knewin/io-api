@@ -35,21 +35,21 @@ The above JSON protocol shows the parameters available to search for news in Kne
 
 *where:*
 
-Field | Description
------ | -----------
-`key` | the key authorization
-`query` | the boolean query (operators AND, OR, NOT)
+Field | Optional | Description
+----- | -------- | -----------
+`key` | no | the key authorization
+`query` | yes | a boolean query (max 1024 characters)
 `defaultOperator` | the default boolean operator (OR or AND) - default OR
-`offset` | the start position
+`offset` | yes | a start position
 
 Filter field | Description
 ------------ | -----------
 `sourceId` | a list of source identifications (max 100)
 `language` | a list of languages
-`sincePublished` | the since published date
-`untilPublished` | the until published date
-`sinceCrawled` | the since crawled date
-`untilCrawled` | the until crawled date
+`sincePublished` | a since published date
+`untilPublished` | a until published date
+`sinceCrawled` | a since crawled date
+`untilCrawled` | a until crawled date
 `fields` | a list of field to be returned
 `gmt` | the GMT to be used
 
