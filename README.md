@@ -36,6 +36,10 @@ The above JSON protocol shows the parameters available to search for news in Kne
 
 *where:*
 
+Field | Description
+----- | -----------
+`key` | chave de autorização do cliente
+
 `key`: chave de autorização do cliente.
 
 `query`: palavras que representam uma consulta (operadores AND, OR e NOT - default OR).
