@@ -42,7 +42,7 @@ Field | Required | Description
 `defaultOperator` | no | the default boolean operator (OR or AND) - default OR
 `offset` | no | a start position (default 0)
 `filter` | no | to filter the result set
-`sort` | no | to sort the result set (default 
+`sort` | no | to sort the result set (default crawled date, descendent order - from newer to older)
 
 Filter field | Description
 ------------ | -----------
@@ -53,7 +53,7 @@ Filter field | Description
 `sinceCrawled` | a since crawled date
 `untilCrawled` | a until crawled date
 `fields` | a list of field to be returned
-`gmt` | the GMT to be used (default crawled date, descendent order - from newer to older)
+`gmt` | the GMT to be used
 
 
 Sort field | Required | Description
