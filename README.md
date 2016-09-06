@@ -46,18 +46,18 @@ Field | Required | Description
 `filter` | no | to filter the result set
 `sort` | no | to sort the result set - default crawled date, descendent order - from newer to older
 
-Filter field | Description
------------- | -----------
-`sourceId` | a list of source identifications (max 100)
-`language` | a list of languages
-`sincePublished` | a since published date
-`untilPublished` | a until published date
-`sinceCrawled` | a since crawled date
-`untilCrawled` | a until crawled date
+Filter field | Required | Description
+------------ | -------- | -----------
+`sourceId` | no | a list of source identifications (max 100)
+`language` | no | a list of languages
+`sincePublished` | no | a since published date
+`untilPublished` | no | a until published date
+`sinceCrawled` | no | a since crawled date
+`untilCrawled` | no | a until crawled date
 
 
 Sort field | Required | Description
--------------- | -------- | -----------
+---------- | -------- | -----------
 `field` | yes | the field to be used to sort the result set (possible values: `published_date`, `crawled_date`, `frequency`)
 `order` | yes | the order to be sorted (possible values: `asc` or `desc`)
 
