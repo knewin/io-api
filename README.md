@@ -49,10 +49,10 @@ Filter field | Description
 `category` | filtrar por uma categoria da notícia
 `locality` | filtrar por uma localidade da notícia
 `page` | filtrar por uma página
-`sincePublished` | data1 inicial de publicação da notícia
-`untilPublished` | data1 final da publicação da notícia
-`sinceCrawled` | data1 inicial da coleta da notícia
-`untilCrawled` | data1 final da coleta da notícia
+`sincePublished`* | data1 inicial de publicação da notícia
+`untilPublished`* | data1 final da publicação da notícia
+`sinceCrawled`* | data1 inicial da coleta da notícia
+`untilCrawled`* | data1 final da coleta da notícia
 `fields` | lista de campos a serem retornados a partir de uma consulta
 `gmt` | indica qual GMT deverá ser utilizado
 
@@ -63,7 +63,7 @@ Sort field | Description
 `order` | informa se a ordenação deverá ser ascendente (asc), do mais antigo para o mais novo, ou descendente (desc), do mais novo para o mais antigo
 
 
-1 O formato da data segue o padrão definido pelo W3C mas sem o time zone (eg.,  1997-07-16T19:20:30)
+* Date format based on W3C pattern (eg.,  1997-07-16T19:20:30)
 
 
 ## Response protocol
