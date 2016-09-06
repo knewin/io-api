@@ -57,9 +57,9 @@ Filter field | Description
 
 
 Sort field | Required | Description
----------- | -------- | -----------
+-------------- | -------- | -----------
 `field` | yes | the field to be used to sort the result set (possible values: `published_date`, `crawled_date`, `frequency`)
-`order` | yes | the order bo be sorted (possible values: `asc` or `desc`)
+`order` | yes | the order to be sorted (possible values: `asc` or `desc`)
 
 
 *__IMPORTANT__: Date format based on W3C pattern (eg., 1997-07-16T19:20:30)*
