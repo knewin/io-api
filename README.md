@@ -59,11 +59,11 @@ Filter field | Description
 
 Sort field | Description
 ---------- | -----------
-`field` | indica o campo a ser utilizado para ordenar as notícias recuperadas ("published_date", "crawled_date", "frequency")
+`field` | indica o campo a ser utilizado para ordenar as notícias recuperadas (`published_date`, `crawled_date`, `frequency`)
 `order` | informa se a ordenação deverá ser ascendente (asc), do mais antigo para o mais novo, ou descendente (desc), do mais novo para o mais antigo
 
 
-* Date format based on W3C pattern (eg.,  1997-07-16T19:20:30)
+* * Date format based on W3C pattern (eg.,  1997-07-16T19:20:30)*
 
 
 ## Response protocol
