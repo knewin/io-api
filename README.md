@@ -62,7 +62,7 @@ Sort field | Required | Description
 `order` | yes | the order to be sorted (possible values: `asc` or `desc`)
 
 
-*__IMPORTANT__: Date format based on W3C pattern (eg., 1997-07-16T19:20:30)*
+*__IMPORTANT__: Date format is based on W3C pattern (eg., 1997-07-16T19:20:30)*
 
 
 ## Response protocol
