@@ -4,7 +4,7 @@
 
 The above JSON protocol shows the parameters available to search for news in Knewin.io API.
 
-``` json
+```
 {
 	"key" : STRING,
 	"query" : STRING[1K],
