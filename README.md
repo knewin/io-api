@@ -39,7 +39,7 @@ Field | Optional | Description
 ----- | -------- | -----------
 `key` | no | the key authorization
 `query` | yes | a boolean query (max 1024 characters)
-`defaultOperator` | the default boolean operator (OR or AND) - default OR
+`defaultOperator` | yes | the default boolean operator (OR or AND) - default OR
 `offset` | yes | a start position
 
 Filter field | Description
