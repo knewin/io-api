@@ -40,7 +40,7 @@ Field | Required | Description
 `key` | yes | the key authorization
 `query` | yes | a boolean query (max 1024 characters)
 `defaultOperator` | no | the default boolean operator (OR or AND) - default OR
-`offset` | no | a start position - default 0
+`offset` | no | a start position - default 0 (zero)
 `filter` | no | to filter the result set
 `sort` | no | to sort the result set - default crawled date, descendent order - from newer to older
 
