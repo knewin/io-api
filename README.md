@@ -63,7 +63,7 @@ Sort field | Description
 `order` | informa se a ordenação deverá ser ascendente (asc), do mais antigo para o mais novo, ou descendente (desc), do mais novo para o mais antigo
 
 
-***IMPORTANT**: Date format based on W3C pattern (eg.,  1997-07-16T19:20:30)*
+*__IMPORTANT__: Date format based on W3C pattern (eg.,  1997-07-16T19:20:30)*
 
 
 ## Response protocol
