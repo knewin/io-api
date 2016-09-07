@@ -2,6 +2,7 @@
 
 - [Request protocol](#request-protocol)
 	- [Tips for searching](#tips-for-searching)
+	- [Advanced search](#advanced-search)
 	- [Request examples](#request-examples)
 - [Response protocol](#response-protocol)
 
@@ -137,7 +138,7 @@ Field name | Description
 `image_caption` | the image caption content - ex: ex., `source:Boston`
 `image_credit` | the image credit content - ex: ex., `source:Mary`
 
-> *__IMPORTANT__: It's possible to combine multiple fields in a query - ex., `title:(technology OR computer) NOT subtitle:cell`.*
+> *__IMPORTANT__: It's possible to combine multiple fields in a query - ex., `title:(technology OR computer) NOT content:mobile`.*
 
 
 ### Request examples
