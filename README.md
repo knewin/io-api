@@ -76,36 +76,36 @@ The response protocol, in JSON format, contains a list of news returned from a s
 	"count": INTEGER,
 	"hits": [	
 		{
-			"url": STRING,
-			"id": INTEGER,
-			"domain": STRING,
-			"title": STRING,
-			"subtitle": STRING,
-			"author": STRING,
-			"content": STRING,
-			"source_id": STRING,
-			"source": STRING,
+			"url": STRING ,
+			"id": INTEGER ,
+			"domain": STRING ,
+			"title": STRING ,
+			"subtitle": STRING ,
+			"author": STRING ,
+			"content": STRING ,
+			"source_id": STRING ,
+			"source": STRING ,
+			"crawled_date": DATE ,
+			"published_date": DATE ,
+			"lang": STRING ,
+			"category": STRING ,
+			"hat": STRING ,
+			"locality": STRING ,
+			"page": STRING ,
 			"source_locality": [
 				{
 					"country": STRING,
 					"state": STRING, 
 					"city": STRING
 				}
-			]
-			"crawled_date": DATE,
-			"published_date": DATE,
-			"lang": STRING,
+			] ,
 			"image_hits": [
 				{
 					"url": STRING,
 					"caption": STRING,
 					"credit": STRING
 				}
-			],
-			"category": STRING,
-			"hat": STRING,
-			"locality": STRING,
-			"page": STRING,
+			]
 		}
 	]
 }
@@ -115,5 +115,27 @@ The response protocol, in JSON format, contains a list of news returned from a s
 
 Field | Description
 ----- | -----------
-num_docs | the total amount of documents returned for a search
-start | the start position of returned news in the result set
+`num_docs` | the total amount of documents returned for a search
+`start` | the start position of returned news in the result set
+`count`| the amount of news returned in the response
+`hits` | a list of news data
+
+
+News field | Description
+---------- | -----------
+`url`| the news URL
+`id` | the news identification
+`domain` | the news URL's domain
+`title` | the title
+`subtitle` | the subtitle
+`author` | the author
+`content` | the content
+`source_id` | the source identification
+`source` | the source description
+`crawled_date | the crawled date
+`published_date` | the published date
+`lang` | the language
+`category` | the news category
+`hat` | the news hat
+`locality` | the news locality
+`page` | the page URL
