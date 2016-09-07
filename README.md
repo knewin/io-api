@@ -43,8 +43,8 @@ Field | Required | Description
 `offset` | no | a start position - default 0 (zero)
 `gmt` | no |  the GMT to be used - default UTC
 `fields` | no | a list of fields - default all fields
-`filter` | no | to filter the result set
-`sort` | no | to sort the result set - default crawled date, descendent order - from newer to older
+`filter` | no | to filter the result set (filter fields described in a table above)
+`sort` | no | to sort the result set - default crawled date, descendent order - from newer to older (sort fields described in a table above)
 
 Filter field | Required | Description
 ------------ | -------- | -----------
@@ -118,7 +118,7 @@ Field | Description
 `num_docs` | the total amount of documents returned for a search
 `start` | the start position of returned news in the result set
 `count`| the amount of news returned in the response
-`hits` | a list of news data
+`hits` | a list of news data (news fields described in a table above)
 
 
 News field | Description
@@ -139,8 +139,8 @@ News field | Description
 `hat` | the news hat
 `locality` | the news locality
 `page` | the page URL
-`source_locality` | the source locality (see table above Source locality fields)
-`image_hits` | the images (see table above Image fields)
+`source_locality` | the source locality (source locality fields describe in a table above)
+`image_hits` | the images (image fields described in a table above)
 
 
 Source locality field | Description
