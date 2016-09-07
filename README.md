@@ -72,6 +72,16 @@ Sort field | Required | Description
 *__IMPORTANT__: Date format is based on W3C pattern (eg., 1997-07-16T19:20:30)*
 ---
 
+### Tips for searching
+
+Query expressions/keywords are case insensitive, ie., searching for `Technology` or `technology` will bring the same amount of results.
+
+All keywords are considered, even those that are called stopwords (i.e, `is`, `a`, `the`, etc). 
+
+The boolean connectors should be writtin in upper case (i.e, AND, OR, NOT).
+
+The default fields where searching is applied are: `title`, `subtitle`, `content`, `author`, `image_caption`, and `image_credit`.
+
 ### Request examples
 
 Search for news that contains the keyword `technology`:
