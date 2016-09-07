@@ -29,8 +29,8 @@ The above JSON protocol shows the parameters available to search for news in kne
 		"untilCrawled" : DATE (yyyy-MM-ddTHH:mm:ss)
 	} ,
 	"sort" : {
-		"field": STRING (`published_date`, `crawled_date`, `frequency`) ,
-		"order": STRING (`asc`, `desc`)
+		"field": STRING ("published_date", "crawled_date", "frequency") ,
+		"order": STRING ("asc", "desc")
 	}
 }
 ```
@@ -65,6 +65,32 @@ Sort field | Required | Description
 
 
 *__IMPORTANT__: Date format is based on W3C pattern (eg., 1997-07-16T19:20:30)*
+
+### Request examples
+
+1. Search for news that contains the keyword `technology`:
+
+```
+{
+	"key" : YOUR-KEY ,
+	"query" : "technology" ,
+	"offset" : 0
+}
+```
+
+2. Search for news that contains the expression `"global warming"` sorted by the published date, from newer to older:
+
+```
+{
+	"key" : YOUR-KEY ,
+	"query" : "\"global warming\"" ,
+	"offset" : 0 ,
+	"sort" : {
+		"field": "published_date" ,
+		"order": "desc"
+	}
+}
+```
 
 
 ## Response protocol
