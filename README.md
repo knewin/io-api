@@ -281,5 +281,5 @@ Image field | Description
 
 ## External links
 
-About [Json](http://www.json.org/) -- there is a list of libraries in several languages (ex., C++, C#, Java, Javascript, Pyton, Ruby, etc.) to parse JSON objects.
+About [Json](http://www.json.org/) - there is a list of libraries in several languages (ex., C++, C#, Java, Javascript, Pyton, Ruby, etc.) to parse JSON objects.
 
