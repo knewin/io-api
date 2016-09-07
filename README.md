@@ -2,7 +2,7 @@
 
 [Request protocol](#request_protocol)
 
-## Request protocol #request_protocol
+#request_protocol ## Request protocol
 
 The above JSON protocol shows the parameters available to search for news in knewin.io API.
 
