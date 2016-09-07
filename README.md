@@ -68,7 +68,6 @@ Sort field | Required | Description
 ---
 
 ### Request examples
----
 
 Search for news that contains the keyword `technology`:
 
