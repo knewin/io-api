@@ -71,6 +71,7 @@ Sort field | Required | Description
 
 
 *__IMPORTANT__: Date format is based on W3C pattern (eg., 1997-07-16T19:20:30)*
+
 ---
 
 ### Tips for searching
