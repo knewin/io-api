@@ -6,29 +6,31 @@ The above JSON protocol shows the parameters available to search for news in kne
 
 ```
 {
-	"key" : STRING,
-	"query" : STRING[1K],
-	"offset" : INTEGER,
-  	"defaultOperator": STRING [OR, AND],
-	"fields" : STRING ["url", "id", "title", "subtitle", "author", "content", 
+	"key" : STRING ,
+	"query" : STRING ,
+	"offset" : INTEGER ,
+  	"defaultOperator": STRING [OR, AND] ,
+	"fields" : STRING [
+			"url", "id", "title", "subtitle", "author", "content", 
 			"source_id", "source", "crawled_date", "published_date", 
-			"lang", "images", "hat", "category", "locality", "page"],
-	"gmt" : STRING (ex.: "-3", "-0200", "+01:00", "0600"),
+			"lang", "images", "hat", "category", "locality", "page"
+		] ,
+	"gmt" : STRING (ex.: "-3", "-0200", "+01:00", "0600") ,
 	"filter" : {
-		"sourceId" : INTEGER [1..n],
-		"language" : [ 
+		"sourceId" : INTEGER ,
+		"language" : [
 			"pt", "en", "es", "fr", "de", "bg", "cs", "el", "et", 
 			"fi", "hu", "it", "ja", "ko", "lt", "nl", "pl", "ro", 
 			"ru", "sk", "sl", "so", "sv", "uk"
-		],
-		"sincePublished" : DATE,
-		"untilPublished" : DATE,
-		"sinceCrawled" : DATE,
-		"untilCrawled" : DATE
-	},
+		] ,
+		"sincePublished" : DATE (yyyy-MM-ddTHH:mm:ss) ,
+		"untilPublished" : DATE (yyyy-MM-ddTHH:mm:ss) ,
+		"sinceCrawled" : DATE (yyyy-MM-ddTHH:mm:ss) ,
+		"untilCrawled" : DATE (yyyy-MM-ddTHH:mm:ss)
+	} ,
 	"sort" : {
-		"field": STRING ("published_date", "crawled_date", "frequency"),
-		"order": STRING ("asc", "desc")
+		"field": STRING (`published_date`, `crawled_date`, `frequency`) ,
+		"order": STRING (`asc`, `desc`)
 	}
 }
 ```
@@ -85,8 +87,8 @@ The response protocol, in JSON format, contains a list of news returned from a s
 			"content": STRING ,
 			"source_id": STRING ,
 			"source": STRING ,
-			"crawled_date": DATE ,
-			"published_date": DATE ,
+			"crawled_date": DATE (yyyy-MM-ddTHH:mm:ss) ,
+			"published_date": DATE (yyyy-MM-ddTHH:mm:ss) ,
 			"lang": STRING ,
 			"category": STRING ,
 			"hat": STRING ,
