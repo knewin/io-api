@@ -1,8 +1,11 @@
 # News API
 
-[Request protocol](#request_protocol)
+[Request protocol](#request-protocol)
+	[Request examples](#request-examples)
+[Response protocol](#response-protocol)
 
-#request_protocol ## Request protocol
+
+## Request protocol
 
 The above JSON protocol shows the parameters available to search for news in knewin.io API.
 
