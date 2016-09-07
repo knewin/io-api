@@ -90,7 +90,7 @@ First request...
 {
 	"key" : YOUR-KEY ,
 	"query" : "technology" ,
-	*"offset" : 0* ,
+	_"offset" : 0_ ,
 	"filter" : {
 		"sinceCrawled" : "2016-01-01T00:00:00" ,
 		"untilCrawled" : "2016-01-01T23:59:59"
@@ -103,7 +103,7 @@ Second request...
 {
 	"key" : YOUR-KEY ,
 	"query" : "technology" ,
-	*"offset" : 10* ,
+	_"offset" : 10_ ,
 	"filter" : {
 		"sinceCrawled" : "2016-01-01T00:00:00" ,
 		"untilCrawled" : "2016-01-01T23:59:59"
