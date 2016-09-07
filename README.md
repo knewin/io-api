@@ -1,7 +1,9 @@
 # News API
 
 [Request protocol](#request-protocol)
+
 	[Request examples](#request-examples)
+	
 [Response protocol](#response-protocol)
 
 
