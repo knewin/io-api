@@ -111,7 +111,33 @@ Second request...
 	}
 }
 ```
+
 > *__IMPORTANT__: it's highly recommended to used `sinceCralwed` and `untilCrawled` filter fields, because new documents are added all the time so that it's possible to get the same range of documents in every new request.*
+
+### Advanced search
+
+Some fields are allowed to search for their textual content. It means that queries can be applied to specific fields. To use this type of advanced query one can add the field name followed by a colon (i.e., `field_name:`) and then the expression/keywords to be queried. For example, searching for news documents that only contains the keyword `technology` in the news title.
+
+```
+{
+	"key" : YOUR-KEY ,
+	"query" : "title:technology" ,
+	"offset" : 0
+}
+```
+The following table shows the fields that can be used to more advanced queries.
+
+Field name | Description
+---------- | -----------
+`title` | the news title - ex.: `title:agriculture`
+`subtible` | the news subtitle - ex., `subtitle:(technology AND agriculture)`
+`content` | the news full content - ex., `content:(computer AND api)`
+`author` | the news author - ex., `author:John`
+`source` | the source name - ex., `source:Post`
+`image_caption` | the image caption content - ex: ex., `source:Boston`
+`image_credit` | the image credit content - ex: ex., `source:Mary`
+
+> *__IMPORTANT__: It's possible to combine multiple fields in a query - ex., `title:(technology OR computer) NOT subtitle:cell`.*
 
 
 ### Request examples
