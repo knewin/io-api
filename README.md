@@ -1,6 +1,7 @@
 # News API
 
 - [Request protocol](#request-protocol)
+	- [Tips for searching](#tips-for-searching)
 	- [Request examples](#request-examples)
 - [Response protocol](#response-protocol)
 
@@ -78,9 +79,38 @@ Query expressions/keywords are case insensitive, ie., searching for `Technology`
 
 All keywords are considered, even those that are called stopwords (i.e, `is`, `a`, `the`, etc). 
 
-The boolean connectors should be writtin in upper case (i.e, AND, OR, NOT).
+The boolean connectors should be written in upper case (i.e, AND, OR, NOT).
 
 The default fields where searching is applied are: `title`, `subtitle`, `content`, `author`, `image_caption`, and `image_credit`.
+
+Pagination should be done considering the `sinceCrawled` and `untilCrawled` fields available in the filter part of the query and `offset` field.
+
+First request...
+```
+{
+	"key" : YOUR-KEY ,
+	"query" : "technology" ,
+	*"offset" : 0* ,
+	"filter" : {
+		"sinceCrawled" : "2016-01-01T00:00:00" ,
+		"untilCrawled" : "2016-01-01T23:59:59"
+	}
+}
+```
+
+Second request...
+```
+{
+	"key" : YOUR-KEY ,
+	"query" : "technology" ,
+	*"offset" : 10* ,
+	"filter" : {
+		"sinceCrawled" : "2016-01-01T00:00:00" ,
+		"untilCrawled" : "2016-01-01T23:59:59"
+	}
+}
+```
+
 
 ### Request examples
 
