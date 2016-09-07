@@ -5,6 +5,7 @@
 	- [Advanced search](#advanced-search)
 	- [Request examples](#request-examples)
 - [Response protocol](#response-protocol)
+- [External links](#external-links)
 
 
 ## Request protocol
@@ -85,7 +86,7 @@ The boolean connectors should be written in upper case (i.e, AND, OR, NOT).
 
 The default fields where searching is applied are: `title`, `subtitle`, `content`, `author`, `image_caption`, and `image_credit`.
 
-Pagination should be done considering the `sinceCrawled` and `untilCrawled` fields available in the filter part of the query and `offset` field.
+Pagination should be done considering the `sinceCrawled` and `untilCrawled` fields available in the filter part of the query combined with `offset` field.
 
 First request...
 ```
@@ -105,7 +106,7 @@ Second request...
 {
 	"key" : YOUR-KEY ,
 	"query" : "technology" ,
-	"offset" : 10 , // change to multiple of 10 (each request brings 10 docs)
+	"offset" : 10 , // change to multiples of 10, because each request brings 10 docs
 	"filter" : {
 		"sinceCrawled" : "2016-01-01T00:00:00" ,
 		"untilCrawled" : "2016-01-01T23:59:59"
@@ -187,7 +188,7 @@ Search for news that contains the expression `"global warming" AND "climate chan
 
 ## Response protocol
 
-The response protocol, in JSON format, contains a list of news returned from a search in knewin.io API.
+The response protocol, also in JSON format, contains a list of news returned from a search in knewin.io API.
 
 ```
 {
@@ -235,10 +236,10 @@ The response protocol, in JSON format, contains a list of news returned from a s
 
 Field | Description
 ----- | -----------
-`num_docs` | the total amount of documents returned for a search
-`start` | the start position of returned news in the result set
-`count`| the amount of news returned in the response
-`hits` | a list of news data (news fields described in a table above)
+`num_docs` | the total amount of docs returned for a search
+`start` | the start position of returned docs in the result set
+`count`| the amount of docs returned in the response
+`hits` | a list of news docs (its fields described in a table above)
 
 
 News field | Description
@@ -275,4 +276,8 @@ Image field | Description
 `url` | the image URL
 `caption` | the image caption
 `credit` | the image credit
+
+## External links
+
+About [Json](http://www.json.org/) with a list of libraries to parse JSON objects.
 
