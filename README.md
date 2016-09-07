@@ -68,7 +68,7 @@ Sort field | Required | Description
 
 ### Request examples
 
-1. Search for news that contains the keyword `technology`:
+Search for news that contains the keyword `technology`:
 
 ```
 {
@@ -78,7 +78,7 @@ Sort field | Required | Description
 }
 ```
 
-2. Search for news that contains the expression `"global warming"` sorted by the published date, from newer to older:
+Search for news that contains the expression `"global warming"` sorted by the published date, from newer to older:
 
 ```
 {
@@ -92,6 +92,22 @@ Sort field | Required | Description
 }
 ```
 
+Search for news that contains the expression `"global warming" AND "climate change"`, filtering for news only in English or Spanish, and sorted by the crawled date, from newer to older:
+
+```
+{
+	"key" : YOUR-KEY ,
+	"query" : "\"global warming\" AND \"climate change\"" ,
+	"offset" : 0 ,
+	"filter" : {
+		["en" , "es"]
+	}
+	"sort" : {
+		"field": "crawled_date" ,
+		"order": "desc"
+	}
+}
+```
 
 ## Response protocol
 
