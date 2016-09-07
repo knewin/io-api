@@ -1,7 +1,6 @@
 # News API
 
 ## Request protocol
----
 
 The above JSON protocol shows the parameters available to search for news in knewin.io API.
 
@@ -66,6 +65,7 @@ Sort field | Required | Description
 
 
 *__IMPORTANT__: Date format is based on W3C pattern (eg., 1997-07-16T19:20:30)*
+---
 
 ### Request examples
 ---
@@ -110,9 +110,9 @@ Search for news that contains the expression `"global warming" AND "climate chan
 	}
 }
 ```
+---
 
 ## Response protocol
----
 
 The response protocol, in JSON format, contains a list of news returned from a search in knewin.io API.
 
