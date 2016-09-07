@@ -132,10 +132,27 @@ News field | Description
 `content` | the content
 `source_id` | the source identification
 `source` | the source description
-`crawled_date | the crawled date
+`crawled_date` | the crawled date
 `published_date` | the published date
 `lang` | the language
 `category` | the news category
 `hat` | the news hat
 `locality` | the news locality
 `page` | the page URL
+`source_locality` | the source locality (see table above Source locality fields)
+`image_hits` | the images (see table above Image fields)
+
+
+Source locality field | Description
+--------------------- | -----------
+`country` | the country name
+`state` | the state name
+`city` | the city name
+
+
+Image field | Description
+--------------------- | -----------
+`url` | the image URL
+`caption` | the image caption
+`credit` | the image credit
+
