@@ -110,6 +110,7 @@ Second request...
 	}
 }
 ```
+*__IMPORTANT__: it's highly recommended to used `sinceCralwed` and `untilCrawled` filter fields, because new documents are added all the time*
 
 
 ### Request examples
