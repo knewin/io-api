@@ -90,7 +90,7 @@ First request...
 {
 	"key" : YOUR-KEY ,
 	"query" : "technology" ,
-	__"offset" : 0__ ,
+	"offset" : 0 , // start with 0 (zero)
 	"filter" : {
 		"sinceCrawled" : "2016-01-01T00:00:00" ,
 		"untilCrawled" : "2016-01-01T23:59:59"
@@ -103,7 +103,7 @@ Second request...
 {
 	"key" : YOUR-KEY ,
 	"query" : "technology" ,
-	_"offset" : 10_ ,
+	"offset" : 10 , // change to multiple of 10 (each request brings 10 docs)
 	"filter" : {
 		"sinceCrawled" : "2016-01-01T00:00:00" ,
 		"untilCrawled" : "2016-01-01T23:59:59"
