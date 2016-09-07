@@ -114,6 +114,8 @@ Second request...
 }
 ```
 
+It's strongly recommended to make requests from one's server and avoided to send requests from the client's browser, for example, mainly because the access key could be turned public, so others could use your access key to make requests in your own name.
+
 > *__IMPORTANT__: it's highly recommended to used `sinceCralwed` and `untilCrawled` filter fields, because new documents are added all the time so that it's possible to get the same range of documents in every new request.*
 
 ### Advanced search
@@ -279,5 +281,5 @@ Image field | Description
 
 ## External links
 
-About [Json](http://www.json.org/) with a list of libraries to parse JSON objects.
+About [Json](http://www.json.org/) -- there is a list of libraries in several languages (ex., C++, C#, Java, Javascript, Pyton, Ruby, etc.) to parse JSON objects.
 
