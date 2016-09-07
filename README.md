@@ -111,7 +111,7 @@ Second request...
 	}
 }
 ```
-> *__IMPORTANT__: it's highly recommended to used `sinceCralwed` and `untilCrawled` filter fields, because new documents are added all the time*
+> *__IMPORTANT__: it's highly recommended to used `sinceCralwed` and `untilCrawled` filter fields, because new documents are added all the time so that it's possible to get the same set of documents in every new request.*
 
 
 ### Request examples
