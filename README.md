@@ -2,7 +2,7 @@
 
 ## Request protocol
 
-The above JSON protocol shows the parameters available to search for news in Knewin.io API.
+The above JSON protocol shows the parameters available to search for news in knewin.io API.
 
 ```
 {
@@ -66,3 +66,47 @@ Sort field | Required | Description
 
 
 ## Response protocol
+
+The above response shows the JSON returned from a search in knewin.io API.
+
+```
+{
+	"num_docs": INTEGER,
+	"start":  INTEGER,
+	"count": INTEGER,
+	"hits": [	
+		{
+			"url": STRING,
+			"id": INTEGER,
+			"domain": STRING,
+			"title": STRING,
+			"subtitle": STRING,
+			"author": STRING,
+			"content": STRING,
+			"source_id": STRING,
+			"source": STRING,
+			"source_locality": [
+				{
+					"country": STRING,
+					"state": STRING, 
+					"city": STRING
+				}
+			]
+			"crawled_date": DATE,
+			"published_date": DATE,
+			"lang": STRING,
+			"image_hits": [
+				{
+					"url": STRING,
+					"caption": STRING,
+					"credit": STRING
+				}
+			],
+			"category": STRING,
+			"hat": STRING,
+			"locality": STRING,
+			"page": STRING,
+		}
+	]
+}
+```
