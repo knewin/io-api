@@ -67,7 +67,7 @@ Sort field | Required | Description
 
 ## Response protocol
 
-The above response shows the JSON returned from a search in knewin.io API.
+The response protocol, in JSON format, contains a list of news returned from a search in knewin.io API.
 
 ```
 {
@@ -110,3 +110,10 @@ The above response shows the JSON returned from a search in knewin.io API.
 	]
 }
 ```
+
+*where:*
+
+Field | Description
+----- | -----------
+num_docs | the total amount of documents returned for a search
+start | the start position of returned news in the result set
