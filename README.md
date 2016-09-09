@@ -1,5 +1,6 @@
 # News API
 
+- [Introduction](#introduction)
 - [Request protocol](#request-protocol)
 	- [Tips for searching](#tips-for-searching)
 	- [Advanced search](#advanced-search)
@@ -7,6 +8,11 @@
 - [Response protocol](#response-protocol)
 - [External links](#external-links)
 
+## Introduction
+
+This document describes how to use the Knewin news API. In order to use this API it's necessary to request an access key. Instructions of how to get such key are available in http://knewin.io/.
+
+The endpoint URL is http://api.knewin.io/news and should be accessed only after a Knewin authorization.
 
 ## Request protocol
 
