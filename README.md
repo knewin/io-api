@@ -122,7 +122,7 @@ Second request...
 
 It's strongly recommended to make requests from one's server and avoided to send requests from the client's browser, for example, mainly because the access key could be turned public, so others could use your access key to make requests in your own name.
 
-> *__IMPORTANT__: it's highly recommended to used `sinceCralwed` and `untilCrawled` filter fields, because new documents are added all the time so that it's possible to get the same range of documents in every new request.*
+> *__IMPORTANT__: it's highly recommended to used `sinceCralwed` and `untilCrawled` filter fields in each request, because new documents are added all the time so one can get the same range of documents in further requests.*
 
 ### Advanced search
 
@@ -176,7 +176,7 @@ Search for news that contains the expression `"global warming"` sorted by the pu
 }
 ```
 
-Search for news that contains the expression `"global warming" AND "climate change"`, filtering for news only in English or Spanish, and sorted by the crawled date, from newer to older:
+Search for news that contains the expression `"global warming" AND "climate change"`, filtering for news written in English or Spanish, and sorted by the crawled date, from newer to older:
 
 ```
 {
